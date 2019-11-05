@@ -1,0 +1,24 @@
+//-About Page
+
+extends layout
+block content
+    .container(style='text-align:center')
+        h4.display-4.text-center #{message} 
+        ul.nav.justify-content-center
+            li.nav-item
+                a.nav-link.active(href='/') Home
+            li.nav-item
+                a.nav-link(href='/about') About Us
+            li.nav-item
+                a.nav-link(href='/accountRequest') New Account
+            li.nav-item
+                a.nav-link(href='/moneymanage') Money Management
+        img(src='/images/NYCBG.jpg').img-fluid.img-thumbnail
+        br
+        p.text-justify  
+            |CNZ Bank is a banking company with roots in Brooklyn, New York. Our first bank was opened in Park Slope and 
+            |ran by two employees. Because of our consistent committment to providing our customers with easy banking options, 
+            |we are still standing strong more than 60 years later, with multiple office locations and over 100 employees!! 
+            |Sign up for your account online, then go to your nearest CNZ Bank and open your new bank account. We offer both 
+            |checking and savings accounts. If you're not ready to open an account with us yet, take a look at our Money Management 
+            |tools to help you with some money managing techniques. After that, come by and see us, I'm sure you'll be ready to open an account then!
