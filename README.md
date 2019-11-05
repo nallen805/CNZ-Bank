@@ -1,13 +1,13 @@
 # CNZ-Bank
 A banking website, created using Node, Express and MongoDB. 
 
-Installation: To use this application, you must have Node, Express.js and MongoDB installed. This can be installed from here:
+<strong> Installation:</strong> To use this application, you must have Node, Express.js and MongoDB installed. This can be installed from here:
 
     Node: https://nodejs.org/en/download
     Express: https://expressjs.com/en/starter/installing.html
     MongoDB: https://docs.mongodb.com/manual/installation/
 
-Usage:
+<strong>Usage:</strong>
 As a user:
 1. Sign up for a new account
 2. Login to new account
