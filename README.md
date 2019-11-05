@@ -8,22 +8,27 @@ A banking website, created using Node, Express and MongoDB.
     MongoDB: https://docs.mongodb.com/manual/installation/
 
 <strong>Usage:</strong>
+<br>
 As a user:
-1. Sign up for a new account
-2. Login to new account
-3. View all past transactions
-4. Deposit money
-5. Withdraw money
-6. Transfer money between accounts
-7. Sign up for one or more Money Management sessions
-
+<ul>
+    <li> Sign up for a new account </li>
+    <li> Login to new account </li>
+    <li> View all past transactions </li>
+    <li> Deposit money </li>
+    <li> Withdraw money </li>
+    <li> Transfer money between accounts </li>
+    <li> Sign up for one or more Money Management sessions </li>
+</ul>        
 Admin User:
-1. View all user accounts
-2. View all user transactions
-3. View all Money Management session signups
-
+<ul>
+    <li> View all user accounts </li>
+    <li> View all user transactions </li>
+    <li> View all Money Management session signups </li>
+</ul> 
 In progress...
-4. Search for users (filtering)
-5. Update user's account
-6. Reset user's password
-7. Close customer's account
+<br>
+<ul>
+    <li> Search for users (filtering) </li>
+    <li> Update user's account </li>
+    <li> Reset user's password </li>
+    <li> Close customer's account </li>
