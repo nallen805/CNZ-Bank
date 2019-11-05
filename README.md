@@ -34,6 +34,7 @@ In progress...
     <li> Update user's account </li>
     <li> Reset user's password </li>
     <li> Close customer's account </li>
-
-Demo:
+<br>
+<strong>Demo:</strong>
+<br>    
 <a href="https://imgflip.com/gif/3fdlq7"><img height="300px" width="500px" src="https://i.imgflip.com/3fdlq7.gif" title="made at imgflip.com"/></a>
