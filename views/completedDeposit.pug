@@ -1,0 +1,17 @@
+//- Completed deposit
+extends layout
+block content
+    .container
+        h4.text-center
+            |#{message}
+            .row
+                .col#usname What would you like to do now, #{usname}?
+            .row
+                .col
+                    input(type='button' value='Money Management Signup' onclick='moneyManagementSignup()').btn.submitBtns
+                .col
+                    input(type='button' value='Back to Account' onclick='goBackToAccount(usname)').btn.submitBtns
+                .col
+                    input(type='button' value='Logout' onclick='logout()').btn.submitBtns
+                    
+    

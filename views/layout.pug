@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/css/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/javascripts/jquery-ui/jquery-ui.css')
+    script(src='/javascripts/js/jquery-3.3.1.js')
+    script(src='/javascripts/js/bootstrap.bundle.js')
+    script(src='/javascripts/jquery-ui/jquery-ui.js')
+    script(src='/javascripts/jsFunctions.js')
+    block header
+      include ./includes/header.pug
+  body.container
+    block content
+    block footer
+      include ./includes/footer.pug

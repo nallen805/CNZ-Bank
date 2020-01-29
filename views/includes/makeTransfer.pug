@@ -1,0 +1,34 @@
+.container
+    h5.text-center Transfer Money
+    form(action='/completedTransfer', method='post').form-group
+        .row
+            .col
+                label Username
+                br
+                input(type='text' name='usName' value=usName required).form-control
+        .row
+            .col
+                label Transfer 
+                select#selection(name='tranSelection' onchange='transferPrepopulate(selection)' required).form-control
+                    option select account...
+                    option checking
+                    option savings
+        .row
+            .col 
+                label From: 
+                input#transFrom(type='text' name='transFrom' value='' required).form-control
+            .col
+                label To:
+                input#transTo(type='text' name='transTo' value='' required).form-control
+        .row
+            .col
+                input#cBalan(type='text' name='checkBalan' hidden='true')
+                input#sBalan(type='text' name='saveBalan' hidden='true')
+        .row
+            .col 
+                label Transfer Amount
+                input(type='text' name='transAmount' placeholder='0.00' required).form-control  
+                br   
+        .row
+            .col
+                input(type='submit' value='Transfer Money').form-control.btn.submitBtns

@@ -1,0 +1,8 @@
+extends layout
+block content
+    .container
+        .row
+            h4.col#usName Sorry, #{usName+message}
+        .row
+            .col.text-center
+                input(type='button' value='Back to Account' onclick='backToMyAccount(usName)').btn.submitBtns

@@ -1,0 +1,44 @@
+extends layout
+block content
+    h4.text-center
+        |#{message+usName}
+    each ar in acctReq
+        .row
+            .col
+                - let usName= `${ar.usName}`;
+                label#usName Username: #{usName}
+            .col 
+                - let checking = `${ar.checking}`;
+                label#checking Checking Account: #{checking}
+                .row
+                    .col
+                        - let cBalance = `${ar.cBalance}`;
+                        label#cBalance Balance: $#{cBalance}
+            .col
+                - let savings = `${ar.savings}`;
+                label#savings Savings Account: #{savings}
+                .row
+                    .col
+                        - let sBalance = `${ar.sBalance}`;
+                        label#sBalance Balance: $#{sBalance}    
+    .row.text-center
+        .col
+            input(type='button' value='View Transactions' onclick='showTransactions(usName)').btn.submitBtns
+        .col
+            input(type='button' value='Make Deposit' onclick='showDepositForm()').btn.submitBtns
+        .col
+            input(type='button' value='Make Withdrawal' onclick='showWithdrawalForm(cBalance, sBalance)').btn.submitBtns
+        .col
+            input(type='button' value='Transfer Money' onclick='showTransferForm(cBalance, sBalance)').btn.submitBtns
+    .row
+        .col.text-right
+            a(href='/login') Logout
+    #showTransactions
+        .container
+            h5.text-center Transactions
+    #showDeposit
+        include ./includes/makeDeposit.pug
+    #showWithdrawal
+        include ./includes/makeWithdrawal.pug
+    #showTransferForm
+        include ./includes/makeTransfer.pug        

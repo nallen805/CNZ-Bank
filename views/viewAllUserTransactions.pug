@@ -1,0 +1,17 @@
+extends layout
+block content
+    .container
+        h4.text-center #{message}
+        table.table.table-striped
+            tr
+                th Date
+                th User
+                th Transaction Type
+            each trans in allTrans
+                tr
+                    td #{trans.date}
+                    td #{trans.usName}
+                    td #{trans.transactionType}
+        .row
+            .col.text-left
+                a(href='/adminWelcome') Back            

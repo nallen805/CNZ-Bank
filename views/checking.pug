@@ -1,0 +1,18 @@
+//- Checking account 
+extends layout
+block content
+    .container(style='text-align:center')
+        h4.display-4.text-center #{message} 
+        ul.nav.justify-content-center
+            li.nav-item
+                a.nav-link.active(href='/') Home
+            li.nav-item
+                a.nav-link(href='/about') About Us
+            li.nav-item.dropdown
+                a.nav-link.dropdown-toggle(data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false') Accounts
+                .dropdown-menu
+                    a.dropdown-item(href='/checking') Checking
+                    a.dropdown-item(href='/savings') Savings
+            li.nav-item
+                a.nav-link(href='/moneymanage') Money Management
+        

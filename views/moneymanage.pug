@@ -1,0 +1,87 @@
+extends layout
+block content
+    .container
+        h4.display-4.text-center #{message} 
+        br
+        ul.nav.justify-content-center
+            li.nav-item
+                a.nav-link.active(href='/') Home
+            li.nav-item
+                a.nav-link(href='/about') About Us
+            li.nav-item
+                a.nav-link(href='/accountRequest') New Account
+            li.nav-item
+                a.nav-link(href='/moneymanage') Money Management
+        br
+    .row
+        .col.text-center.justify-content-center
+            p.
+                We hold weekly money management sessions. Each week, you will learn something new about different ways to manage 
+                your money better. We have money advisors available as well to discuss your finances and what opportunities are 
+                available to you. You choose a schedule that works for you. You can come every week, or you can come for the weeks
+                you feel will benefit you the most. You can come to as many sessions as you'd like until you're comfortable enough
+                to open an account with us. Thank you!!
+    .row.text-justify
+        .col
+            h5 Sessions:
+            br
+            .row
+                .col 
+                    |Session 1: What is Money Management?
+                    br
+                    |Join us on Mondays for our intro to Money Management class. We'll discuss what our process is to help you manage your money better
+                    |and we'll introduce you to the opportunities available to you once you've reached your goal.
+            hr
+            .row
+                .col
+                    |Session 2: Where is my Money Going?
+                    br
+                    |During this session, we'll create a budget and sort out exactly where your finances are going. Sometimes things are a lot
+                    |easier to deal with when you're looking at everything laid out in front of you. Sessions are Tuesdays.
+            hr
+            .row
+                .col
+                    |Session 3: How do I Juggle Everything?
+                    br
+                    |We cover lots of money saving tips and techniques in this money management session. You can never learn too much about
+                    |how to save money and balance your budget at the same time. Join us every Wednesday for this session.
+            hr
+            .row
+                .col
+                    |Session 4: Once, I'm Back on Track, How Do I Stay There?
+                    br
+                    |It's easier than you think to get off track even after you've managed to get your finances right and balance your budget
+                    |appropriately. Find out how to stay ahead once you're caught up during this session, held on Thursdays.
+        .col
+            form(action='sessionSaved' method='post').form-group
+                .row
+                    .col 
+                        label First Name:
+                        input(type='text' name='mmFName' required).form-control
+                    .col
+                        label Last Name:
+                        input(type='text' name='mmLName' required).form-control
+                .row
+                    .col
+                        label Email:
+                        input(type='email' name='mmEmail' required).form-control
+                .row
+                    .col
+                        label Session:
+                        input(type='text' name='sessionDate' required).form-control#datePicker
+                        br
+                        select(name='session').form-control
+                            option Session 1: What is Money Management?
+                            option Session 2: Where is my money going?
+                            option Session 3: How do I juggle everything?
+                            option Session 4: Once I'm back on track, how do I stay there?
+                            option All 4 Sessions
+                br
+                .row
+                    .col
+                        input(type='submit' value='Sign Up' required).btn.form-control.submitBtns
+
+
+            
+
+            

@@ -1,0 +1,30 @@
+.container    
+    h5.text-center Deposit
+    form(action='/completedDeposit' method='post').form-group
+        .row
+            .col
+                label Username
+                br
+                input#prenName(type='text' name='usName' value=usName required).form-control
+        .row
+            .col
+                label Select the account you wish to deposit to:
+                br
+                select#acctNameDeposit(name='acctName' onchange='depositPrepopulate(acctNameDeposit)' required).form-control
+                    option select account...
+                    option checking
+                    option savings
+        .row
+            .col
+                label Account #:
+                br
+                input#depositAcct(type='text' name='acctNumDeposit' value='' required).form-control
+        .row
+            .col
+                label Enter the amount you want to deposit:
+                br
+                input(type='text' name='depositAmount' value='' placeholder='0.00' required).form-control
+                br
+        .row
+            .col
+                input(type='submit' value='Make Deposit').form-control.btn.submitBtns       

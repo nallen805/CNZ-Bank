@@ -1,0 +1,34 @@
+.container
+    h5.text-center Withdrawal
+    form(action='/completedWithdrawal', method='post').form-group
+        .row
+            .col
+                label Username
+                br
+                input(type='text' name='usName' value=usName required).form-control
+        .row
+            .col 
+                label Which account do you want to withdraw from?
+                br 
+                select#acctNameWithdrawal(name='acctNameWithdrawal' onchange='withdrawalPrepopulate(acctNameWithdrawal)' required).form-control
+                    option select account...
+                    option checking
+                    option savings
+        .row
+            .col
+                label Account #:
+                br
+                input#acctNumWithdrawal(type='text' name='acctNumWithdrawal' required).form-control
+        .row
+            .col
+                input#checkBal(type='text' name='checkingBalance' hidden='true')
+                input#saveBal(type='text' name='savingsBalance' hidden='true')
+        .row
+            .col
+                label Withdrawal Amount:
+                br
+                input(type='text' name='withdrawalAmount' placeholder='0.00' required).form-control
+                br
+        .row
+            .col
+                input(type='submit' value='Make Withdrawal').form-control.btn.submitBtns

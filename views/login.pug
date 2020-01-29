@@ -1,0 +1,22 @@
+extends layout
+block content
+    .container
+        h4(style='color:red').text-center    
+            |#{message}
+        .text-center
+            form(action='/viewMyAccount' method='post').form-group
+                .row
+                    .col 
+                        label Username:
+                        br
+                        input(type='text' name='usName' required).form-control
+                .row
+                    .col
+                        label Password:
+                        br
+                        input(type='password' name='usPass' required).form-control
+                .row
+                    .col
+                        input(type='submit' value='Login').btn.submitBtns.form-control
+        .row.text-left
+            a(href='/') Home
