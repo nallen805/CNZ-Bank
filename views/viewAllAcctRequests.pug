@@ -1,26 +1,16 @@
 extends layout
 block content     
-    .container
-        h4.display-4.text-center #{message} 
-        ul.nav.justify-content-center
-            li.nav-item
-                a.nav-link.active(href='/') Home
-            li.nav-item
-                a.nav-link(href='/about') About Us
-            li.nav-item
-                a.nav-link(href='/accountRequest') New Account
-            li.nav-item
-                a.nav-link(href='/moneymanage') Money Management
-        br
-        .row
-            .col.text-center
-                input#search(type='search' placeholder='Search for User' onkeyup='searchUsers()')
-        br
-        //- Finish working on filter
+    h4.display-4.text-center #{message} 
+    .row
+        .col.text-center
+            input#search(type='search' placeholder='Search for User' onkeyup='searchUsers()')
+    br
+    //- Finish working on filter
+    .container(style='overflow-x:auto')
         table(width='50%').table.table-striped.styleTable
             tr
                 th First Name
-                th Last Name
+                th Last Name    
                 th Username
                 th Password
                 th Checking Account
@@ -29,7 +19,7 @@ block content
                 th Address
                 th City
                 th State
-                th Zip
+                th Zip    
             each acct in newAcct
                 tr(id='listOfUsers')
                     td.searches #{acct.firstName}
@@ -43,6 +33,6 @@ block content
                     td #{acct.city}
                     td #{acct.state}
                     td #{acct.zip}   
-        .row
-            .col.text-left
-                a(href='/adminWelcome') Back                  
+    .row
+        .col.text-right
+            a(href='/adminWelcome') Back                  

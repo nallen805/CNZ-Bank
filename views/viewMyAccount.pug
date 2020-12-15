@@ -1,6 +1,6 @@
 extends layout
 block content
-    h4.text-center
+    h4.display-4.text-center
         |#{message+usName}
     each ar in acctReq
         .row
@@ -9,14 +9,14 @@ block content
                 label#usName Username: #{usName}
             .col 
                 - let checking = `${ar.checking}`;
-                label#checking Checking Account: #{checking}
+                label#checking Checking Account#: #{checking}
                 .row
                     .col
                         - let cBalance = `${ar.cBalance}`;
                         label#cBalance Balance: $#{cBalance}
             .col
                 - let savings = `${ar.savings}`;
-                label#savings Savings Account: #{savings}
+                label#savings Savings Account#: #{savings}
                 .row
                     .col
                         - let sBalance = `${ar.sBalance}`;

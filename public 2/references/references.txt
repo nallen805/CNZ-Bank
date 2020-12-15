@@ -1,0 +1,18 @@
+Sources used during creation of CNZ Bank:
+
+Home Page:
+    BG Pic: https://unsplash.com/photos/eBWzFKahEaU
+    Easy Sign up:  https://www.kissclipart.com/check-list-paper-png-clipart-paper-computer-icons-4gwwe8/download-clipart.html
+    Checking & Savings: https://www.kissclipart.com/bank-check-icon-clipart-checks-bank-clip-art-73m1z0/
+    Money Manage: https://www.kissclipart.com/dollar-sign-png-clipart-dollar-sign-clip-art-9c9o2d/
+
+About Page:
+    BG Pic: https://unsplash.com/photos/Y_7wXiRn_J8
+
+MM Signup Page  
+    Office signup: https://www.kissclipart.com/clip-art-clipart-computer-icons-clip-art-a965ch/
+
+Favicon: 
+Icons made by: https://www.flaticon.com/authors/roundicons || title="Roundicons" from: https://www.flaticon.com/ || title="Flaticon" || www.flaticon.com
+    
+    

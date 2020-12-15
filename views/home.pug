@@ -1,37 +1,54 @@
 extends layout
 block content
-    .container(style='text-align:center')
-        h4.display-4.text-center #{message} 
-        ul.nav.justify-content-center
-            li.nav-item
-                a.nav-link.active(href='/') Home
-            li.nav-item
-                a.nav-link(href='/about') About Us
-            li.nav-item
-                a.nav-link(href='/accountRequest') New Account
-            li.nav-item
-                a.nav-link(href='/moneymanage') Money Management 
+    .row
+        .col
+            ul.nav.justify-content-end
+                li.nav-item
+                    a.nav-link.active(href='/') Home
+                li.nav-item
+                    a.nav-link(href='/accountRequest') New Account
+                li.nav-item
+                    a.nav-link(href='/moneymanage') Money Management 
+    .row
+        .col.text-right
+            a(href='/login') Login
+    .row
+        .col.text-right
+            a(href='/adminLogin') Admin
+
+    .row
+        .col.text-left(style='padding-top: 150px')
+            h3.display-3 #{message}
+        .col
+            img(src="/images/humanoid_coins.png", alt="Finance").img-fluid.rounded
+    .parallax
         .row
-            .col-10(style='text-align:center')
-                img(src='./images/bankPic.jpg').img-fluid.img-thumbnail
-            .col-2.text-justify
-                a(href='/login') Already have an account? Log in here.
-                hr
-                a(href='/adminLogin') Admin
-        hr
+            .col.text-center
+                h3.display-3 No fees! Free bank account signup!
+        .row.styleRow
+            .col
+                h4 Sign up for an account online! Submit your documents by mail, or come into one of our many locations to complete your request. 
+    .parallax2
         .row
+            .col.text-center
+                h3.display-3 About Us 
+        .row.styleRow
             .col
-                .card
-                    img(src='/images/easySignup.png' style='height: 338px').img-fluid.card-img-top
-                    .card-body
-                        h5.card-text Easy Signup!
+                h4. 
+                    CNZ Bank is a banking company with roots in Brooklyn, New York. Our first bank was opened in Park Slope and 
+                    ran by two employees. Because of our consistent committment to providing our customers with easy banking options, 
+                    we are still standing strong more than 60 years later, with multiple office locations and over 100 employees!! 
+                    Go to your nearest CNZ Bank and open your new bank account. We offer both checking and savings accounts. If 
+                    you're not ready to open an account with us yet, take a look at our Money Management tools to help you with 
+                    some money managing techniques. After that, come by and see us, I'm sure you'll be ready to open an account then! 
+    .parallax3
+        .row
+            .col.text-center
+                h3.display-3 Not ready to open an account yet?
+        .row.styleRow
             .col
-                .card
-                    img(src='/images/checking.png' style='height: 338px').img-fluid.card-img-top
-                    .card-body
-                        h5.card-text Checking &amp; Savings!
-            .col
-                .card
-                    img(src='/images/moneyManage.png' style='height: 338px').img-fluid.card-img-top
-                    .card-body
-                        h5.card-text Money Management!   
+                h4. 
+                    If you're not ready to open an account yet, check out our Money Management Sessions!
+                .row
+                    .col.text-center
+                        input(type="button", value="Learn More" onclick='moneyManagementSignup()').styleButton.btn.rounded 

@@ -1,54 +1,60 @@
 //- Checking account 
 extends layout
 block content
-    .container
-        h4.display-4.text-center #{message} 
+    .row
+        .col
+            ul.nav.justify-content-end
+                li.nav-item
+                    a.nav-link(href='/') Home
+                li.nav-item
+                    a.nav-link.active(href='/accountRequest') New Account
+                li.nav-item
+                    a.nav-link(href='/moneymanage') Money Management 
+    br
+    .parallax4
+        .row
+            .col
+                h4.display-4.text-center #{message}
+        .row
+            .col.text-center
+                h5. 
+                    Fill out the following form to create your new account online. 
+    br
+    form(action="/savedRequest" method="post").form-group
+        .row
+            .col
+                label First Name:
+                input(type='text' name='firstName' required).form-control
+            .col 
+                label Last Name:
+                input(type='text' name='lastName' required).form-control
+        .row
+            .col
+                label Email Address:
+                input(type='email' name='email' required).form-control
+        .row
+            .col
+                label Address:
+                input(type='text' name='address' required).form-control
+            .col 
+                label City:
+                input(type='text' name='city' required).form-control
+            .col
+                label State:
+                select(name='state').form-control
+                    option Select...
+                    option CA
+                    option NY
+                    option GA
+                    option NC
+                    option PA
+                    option DC
+            .col 
+                label Zip:
+                input(type='number' name='zip' required).form-control
         br
-        ul.nav.justify-content-center
-            li.nav-item
-                a.nav-link.active(href='/') Home
-            li.nav-item
-                a.nav-link(href='/about') About Us
-            li.nav-item
-                a.nav-link(href='/accountRequest') New Account
-            li.nav-item
-                a.nav-link(href='/moneymanage') Money Management
-        br
-        form(action="/savedRequest" method="post").form-group
-            .row
-                .col
-                    label First Name:
-                    input(type='text' name='firstName' required).form-control
-                .col 
-                    label Last Name:
-                    input(type='text' name='lastName' required).form-control
-            .row
-                .col
-                    label Email Address:
-                    input(type='email' name='email' required).form-control
-            .row
-                .col
-                    label Address:
-                    input(type='text' name='address' required).form-control
-                .col 
-                    label City:
-                    input(type='text' name='city' required).form-control
-                .col
-                    label State:
-                    select(name='state').form-control
-                        option Select...
-                        option CA
-                        option NY
-                        option GA
-                        option NC
-                        option PA
-                        option DC
-                .col 
-                    label Zip:
-                    input(type='number' name='zip' required).form-control
-            br
-            .row
-                .col.text-center
-                    input(type='reset' value='Clear Form').form-control.btn.submitBtns
-                .col.text-center
-                    input(type='submit' value='Submit').form-control.btn.submitBtns                
+        .row
+            .col.text-center
+                input(type='reset' value='Clear Form').form-control.btn.submitBtns
+            .col.text-center
+                input(type='submit' value='Submit').form-control.btn.submitBtns            

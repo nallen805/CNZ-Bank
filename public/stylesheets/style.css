@@ -2,23 +2,133 @@
 .headBG {
   padding: 15px;
   color: #f5f5f5;
-  background-color: #8b0000;
+  background-color: #099;
   border-radius: 3px;
+  width: 25%;
 }
 .footerBG {
   padding: 15px;
-  color: #f5f5f5;
-  background-color: #8b0000;
+  color: #099;
+  background-color: #f5f5f5;
   border-radius: 3px;
 }
-body {
+body.container {
   padding: 25px;
   font-family: 'Gayathri', sans-serif;
+  background-color: #099;
+  color: #000;
 }
 a {
-  color: #4169e1;
+  color: #f5f5f5;
+}
+a:hover {
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #00e6e6;
+  color: #099;
+}
+a:visited {
+  color: #f5f5f5;
+}
+.nav-link.active {
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #00e6e6;
+  color: #099;
+  text-decoration-line: underline;
 }
 .submitBtns {
-  background-color: #8b0000;
-  color: #fff;
+  background-color: #f5f5f5;
+  color: #099;
+}
+.parallax {
+  background-image: url("/images/bankPic.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px;
+  color: #f5f5f5;
+}
+.parallax2 {
+  background-image: url("/images/NYCBG.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px;
+  color: #f5f5f5;
+}
+.parallax3 {
+  background-image: url("/images/coinsSpilled.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px;
+  color: #f5f5f5;
+}
+.parallax4 {
+  background-image: url("/images/city.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 50px;
+  color: #f5f5f5;
+}
+.parallax5 {
+  background-image: url("/images/money.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 40px;
+  color: #f5f5f5;
+}
+.styleRow {
+  background-color: #f5f5f5;
+  padding: 25px;
+  color: #000;
+  border-radius: 10px;
+}
+.styleButton {
+  background-color: #099;
+  color: #f5f5f5;
+}
+#moneyStyle {
+  background-color: #f5f5f5;
+  color: #099;
+}
+.styleMoneyRow {
+  background-color: #f5f5f5;
+  padding: 25px;
+  color: #000;
+  border-radius: 20px;
+}
+.styleLogin {
+  width: 75%;
+}
+#styleAdminLogin {
+  width: 75%;
+  padding-left: 200px;
+}
+.styleImg {
+  padding-top: 50px;
+  height: 350px;
+  width: 350px;
+}
+.styleTrans {
+  padding-left: 150px;
+  padding-right: 150px;
 }
