@@ -1,25 +1,15 @@
 //- Admin welcome
 extends layout
 block content
-    .container
-        h4.display-4.text-center #{message} 
-        ul.nav.justify-content-center
-            li.nav-item
-                a.nav-link.active(href='/') Home
-            li.nav-item
-                a.nav-link(href='/about') About Us
-            li.nav-item
-                a.nav-link(href='/accountRequest') New Account
-            li.nav-item
-                a.nav-link(href='/moneymanage') Money Management
-        br
-        .row
-            .col 
-                a(href='/viewAllAcctRequests') View All Account Requests
-            .col 
-                a(href='/viewAllUserTransactions') View All User Transactions
-            .col
-                a(href='/viewAllMMSignups') View Money Management Session Signups
-        .row
-            .col.text-right
-                a(href='/adminLogin') Logout
+    //.container
+    h4.display-4.text-center #{message} 
+    .row
+        .col 
+            a(href='/viewAllAcctRequests') View All Account Requests
+        .col 
+            a(href='/viewAllUserTransactions') View All User Transactions
+        .col
+            a(href='/viewAllMMSignups') View Money Management Session Signups
+    .row
+        .col.text-right
+            a(href='/adminLogin') Logout

@@ -3,18 +3,7 @@ extends layout
 block content
     .container
         h4.display-4.text-center #{message} 
-        br
-        ul.nav.justify-content-center
-            li.nav-item
-                a.nav-link.active(href='/') Home
-            li.nav-item
-                a.nav-link(href='/about') About Us
-            li.nav-item
-                a.nav-link(href='/accountRequest') New Account
-            li.nav-item
-                a.nav-link(href='/moneymanage') Money Management
-        br
-        form(action='/adminWelcome' method='post').form-group.text-center
+        form#styleAdminLogin(action='/adminWelcome' method='post').form-group.text-center
             .row
                 .col
                     label Username
@@ -28,3 +17,6 @@ block content
             .row
                 .col
                     input(type='submit' value='Login').btn.submitBtns.form-control
+        .row
+            .col.text-right
+                a(href='/') Back
